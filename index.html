@@ -1,183 +1,90 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>S.K.P Web Maker | Premium Websites</title>
+<section class="hero">
+  <div class="hero-content">
+    <span class="tag">🚀 Premium Website Development</span>
+    <h1>Build Your Business Website With S.K.P Web Maker</h1>
+    <p>
+      Fast, Modern & Mobile Friendly Websites that help your business
+      grow and get more customers online.
+    </p>
 
-<style>
-body{
-    margin:0;
-    font-family:Arial;
-    background:#0B1220;
-    color:white;
+    <div class="buttons">
+      <a href="https://wa.me/917776872020" class="btn">Get Started</a>
+      <a href="#services" class="btn2">View Services</a>
+    </div>
+  </div>
+</section>   
+CCS 
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
 }
 
-/* NAV */
-nav{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 40px;
-    background:#0F172A;
-    border-bottom:1px solid #1F2937;
-}
-
-nav h2{
-    color:#FACC15;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    margin-left:20px;
-    opacity:0.8;
-}
-
-nav a:hover{
-    opacity:1;
-}
-
-/* HERO */
 .hero{
-    text-align:center;
-    padding:100px 20px;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  background:linear-gradient(135deg,#0f172a,#1e293b,#2563eb);
+  color:white;
+  padding:20px;
+}
+
+.hero-content{
+  max-width:800px;
+}
+
+.tag{
+  background:rgba(255,255,255,0.15);
+  padding:10px 20px;
+  border-radius:50px;
+  font-size:14px;
 }
 
 .hero h1{
-    font-size:50px;
-    color:#FACC15;
+  font-size:55px;
+  margin:25px 0;
+  line-height:1.2;
 }
 
 .hero p{
-    color:#cbd5e1;
-    font-size:18px;
-    margin-top:10px;
+  font-size:20px;
+  color:#d1d5db;
+  margin-bottom:35px;
+}
+
+.buttons{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+.btn,.btn2{
+  text-decoration:none;
+  padding:15px 35px;
+  border-radius:50px;
+  font-weight:bold;
+  transition:0.3s;
 }
 
 .btn{
-    display:inline-block;
-    margin-top:25px;
-    padding:14px 30px;
-    background:#FACC15;
-    color:black;
-    border-radius:30px;
-    font-weight:bold;
-    text-decoration:none;
+  background:#2563eb;
+  color:white;
 }
 
-/* SECTIONS */
-section{
-    padding:60px 20px;
-    text-align:center;
+.btn:hover{
+  transform:translateY(-5px);
 }
 
-.title{
-    font-size:30px;
-    color:#FACC15;
-    margin-bottom:30px;
+.btn2{
+  border:2px solid white;
+  color:white;
 }
 
-/* CARDS */
-.container{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:20px;
+.btn2:hover{
+  background:white;
+  color:#111;
 }
-
-.card{
-    background:#111827;
-    padding:25px;
-    width:250px;
-    border-radius:15px;
-    border:1px solid #1F2937;
-    transition:0.3s;
-}
-
-.card:hover{
-    transform:translateY(-5px);
-    border-color:#FACC15;
-}
-
-/* PRICING */
-.price{
-    background:#0F172A;
-    border:1px solid #FACC15;
-}
-
-/* FOOTER */
-footer{
-    text-align:center;
-    padding:25px;
-    border-top:1px solid #1F2937;
-    color:#9CA3AF;
-}
-</style>
-
-</head>
-
-<body>
-
-<nav>
-    <h2>S.K.P Web Maker</h2>
-    <div>
-        <a href="#">Home</a>
-        <a href="#services">Services</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#contact">Contact</a>
-    </div>
-</nav>
-
-<div class="hero">
-    <h1>We Build Premium Websites</h1>
-    <p>Fast • Modern • Mobile Friendly • Business Growth Focused</p>
-    <a class="btn" href="https://wa.me/917776872020">Get Your Website</a>
-</div>
-
-<section id="services">
-    <div class="title">Our Services</div>
-
-    <div class="container">
-        <div class="card">💈 Barber Shop Website</div>
-        <div class="card">🍽️ Restaurant Website</div>
-        <div class="card">🏋️ Gym Website</div>
-        <div class="card">🛍️ Business Website</div>
-    </div>
-</section>
-
-<section id="pricing">
-    <div class="title">Pricing Plans</div>
-
-    <div class="container">
-        <div class="card price">
-            <h3>Basic</h3>
-            <p>₹500</p>
-        </div>
-
-        <div class="card price">
-            <h3>Standard</h3>
-            <p>₹1500</p>
-        </div>
-
-        <div class="card price">
-            <h3>Premium</h3>
-            <p>₹3000+</p>
-        </div>
-    </div>
-</section>
-
-<section id="contact">
-    <div class="title">Contact</div>
-    <p>📞 7776872020</p>
-    <p>💬 WhatsApp Available 24/7</p>
-
-    <a class="btn" href="https://wa.me/917776872020">Message Now</a>
-</section>
-
-<footer>
-    © 2026 S.K.P Web Maker | All Rights Reserved
-</footer>
-
-</body>
-</html>
