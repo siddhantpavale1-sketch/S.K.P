@@ -1,104 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>S.K.P Web Maker</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>S.K.P Web Maker</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <style>
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-      font-family:'Poppins',sans-serif;
-    }
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
 
-    .hero{
-      min-height:100vh;
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      text-align:center;
-      background:linear-gradient(135deg,#0f172a,#1e293b,#2563eb);
-      color:white;
-      padding:20px;
-    }
+body{
+  background:#0f172a;
+  color:white;
+}
 
-    .hero-content{
-      max-width:800px;
-    }
+header{
+  position:fixed;
+  width:100%;
+  top:0;
+  background:rgba(15,23,42,.9);
+  backdrop-filter:blur(10px);
+  padding:20px 8%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  z-index:1000;
+}
 
-    .tag{
-      background:rgba(255,255,255,0.15);
-      padding:10px 20px;
-      border-radius:50px;
-      font-size:14px;
-    }
+.logo{
+  font-size:28px;
+  font-weight:700;
+}
 
-    .hero h1{
-      font-size:55px;
-      margin:25px 0;
-      line-height:1.2;
-    }
+nav a{
+  color:white;
+  text-decoration:none;
+  margin-left:25px;
+}
 
-    .hero p{
-      font-size:20px;
-      color:#d1d5db;
-      margin-bottom:35px;
-    }
+.hero{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:120px 20px 50px;
+  background:linear-gradient(135deg,#0f172a,#1e293b,#2563eb);
+}
 
-    .buttons{
-      display:flex;
-      justify-content:center;
-      gap:20px;
-      flex-wrap:wrap;
-    }
+.hero-content{
+  max-width:850px;
+}
 
-    .btn,.btn2{
-      text-decoration:none;
-      padding:15px 35px;
-      border-radius:50px;
-      font-weight:bold;
-      transition:0.3s;
-    }
+.tag{
+  background:rgba(255,255,255,.15);
+  padding:10px 20px;
+  border-radius:50px;
+}
 
-    .btn{
-      background:#2563eb;
-      color:white;
-    }
+.hero h1{
+  font-size:55px;
+  margin:25px 0;
+}
 
-    .btn:hover{
-      transform:translateY(-5px);
-    }
+.hero p{
+  color:#d1d5db;
+  font-size:20px;
+  margin-bottom:35px;
+}
 
-    .btn2{
-      border:2px solid white;
-      color:white;
-    }
+.btn{
+  display:inline-block;
+  padding:15px 35px;
+  background:#2563eb;
+  color:white;
+  text-decoration:none;
+  border-radius:50px;
+  margin:10px;
+}
 
-    .btn2:hover{
-      background:white;
-      color:#111;
-    }
-  </style>
+section{
+  padding:80px 8%;
+}
+
+.title{
+  text-align:center;
+  font-size:38px;
+  margin-bottom:40px;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:25px;
+}
+
+.card{
+  background:#1e293b;
+  padding:30px;
+  border-radius:20px;
+  text-align:center;
+}
+
+.card h3{
+  margin:15px 0;
+}
+
+.price{
+  font-size:35px;
+  color:#60a5fa;
+  margin:15px 0;
+}
+
+.contact{
+  text-align:center;
+}
+
+footer{
+  text-align:center;
+  padding:30px;
+  background:#020617;
+  color:#94a3b8;
+}
+
+.whatsapp{
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  background:#25D366;
+  color:white;
+  width:60px;
+  height:60px;
+  border-radius:50%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-decoration:none;
+  font-size:30px;
+}
+
+@media(max-width:768px){
+  .hero h1{
+    font-size:38px;
+  }
+
+  nav{
+    display:none;
+  }
+}
+</style>
 </head>
-
 <body>
-  <section class="hero">
-    <div class="hero-content">
-      <span class="tag">🚀 Premium Website Development</span>
-      <h1>Build Your Business Website With S.K.P Web Maker</h1>
-      <p>
-        Fast, Modern & Mobile Friendly Websites that help your business grow and get more customers online.
-      </p>
 
-      <div class="buttons">
-        <a href="https://wa.me/917776872020" class="btn">Get Started</a>
-        <a href="#services" class="btn2">View Services</a>
-      </div>
+<header>
+  <div class="logo">S.K.P Web Maker</div>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <span class="tag">🚀 Premium Website Development</span>
+    <h1>We Build Premium Websites For Your Business</h1>
+    <p>Fast, Modern & Mobile Friendly Websites that help your business grow and get more customers online.</p>
+
+    <a href="https://wa.me/917776872020" class="btn">Get Started</a>
+    <a href="#services" class="btn">View Services</a>
+  </div>
+</section>
+
+<section id="services">
+  <h2 class="title">Our Services</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>💈 Barber Website</h3>
+      <p>Modern websites for salons and barber shops.</p>
     </div>
-  </section>
+
+    <div class="card">
+      <h3>🍽️ Restaurant Website</h3>
+      <p>Online menus and food business websites.</p>
+    </div>
+
+    <div class="card">
+      <h3>🏋️ Gym Website</h3>
+      <p>Professional fitness and gym websites.</p>
+    </div>
+
+    <div class="card">
+      <h3>🛍️ Business Website</h3>
+      <p>Websites for every type of business.</p>
+    </div>
+  </div>
+</section>
+
+<section id="pricing">
+  <h2 class="title">Pricing Plans</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Basic</h3>
+      <div class="price">₹500</div>
+      <p>Single Page Website</p>
+    </div>
+
+    <div class="card">
+      <h3>Standard</h3>
+      <div class="price">₹1500</div>
+      <p>Business Website</p>
+    </div>
+
+    <div class="card">
+      <h3>Premium</h3>
+      <div class="price">₹3000+</div>
+      <p>Custom Professional Website</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2 class="title">Contact Us</h2>
+  <h3>📞 7776872020</h3>
+  <p>💬 WhatsApp Available 24/7</p>
+</section>
+
+<footer>
+  © 2026 S.K.P Web Maker | All Rights Reserved
+</footer>
+
+<a class="whatsapp" href="https://wa.me/917776872020">💬</a>
+
 </body>
 </html>
